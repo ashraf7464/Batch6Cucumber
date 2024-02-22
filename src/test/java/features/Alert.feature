@@ -8,9 +8,7 @@ Feature: Validate DropDown & iFrame Functionality
     When user click on Try It
     And user validate Alert box is present
     Then User accept the alert
-
-
-
+    
 
   Scenario: TC-104 iFrame functionality should work as expected
     Given user navigates to practice page

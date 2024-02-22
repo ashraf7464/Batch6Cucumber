@@ -2,11 +2,15 @@ package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.managers.OperaDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -52,6 +56,7 @@ public class BaseClass {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
     }
 
     public static WebDriver getDriver() {

@@ -56,6 +56,7 @@ public class AlertPage {
     public void acceptAlert(){
 
         BaseClass.getDriver().switchTo().alert().accept();
+
     }
 
     public void switchToIframe(){
